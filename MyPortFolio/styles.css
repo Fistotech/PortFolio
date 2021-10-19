@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+nav{
+    min-height: 8vh;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-logo{
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600%;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+span{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+
+.nav-links li a{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-links a:hover{
+    color: grey;
+}
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: whitesmoke;
+    margin: 5px;
+}
+
+/*  @media screen  */
+
+@media screen and (max-width: 1024px) {
+    .nav-links{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-X: hidden
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 75vh;
+        top: 8vh;
+        background-color: crimson;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transform: transform 0.5s ease-in;  
+    }
+
+    .nav-links li{
+        opacity: 0%;
+    }
+
+    .burger{
+        float: left;
+        display: block;
+        color: crimson;
+        text-align: center;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }  
+}
+/* end of @media  */
+
+
+/*  the body  */
+
+section{
+    max-width: 100%;
+    height: 89vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hello-text{
+    max-width: 100%;
+    height: auto;
+    font-size: 26px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkcyan;
+    padding-left: 70px;
+    padding-top: 40px; 
+}
+
+.responsive{
+    max-width: 100%;
+    height: 75vh;
+}
+
+button{
+    background-color: white;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 2oopx;
+    color: gold;
+    border-style: solid;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+
+
+/* The about page     */
+
+section .about{
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 80%;
+
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.about-btn{
+    cursor: pointer;
+}
+
+.about-downloadsBtns{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: flex;
+    width: 100%;
+    padding-top: 110px;
+}
+
+.headText{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 2px;   
+}
+/* end of about page  */
+
+
+/* Services page */
+
+section .myServices{
+    max-width: 150%;
+    min-height: auto;
+    background-color: pink;
+    align-items: center;
+    font-size: 23px;
+    font-family: monospace;
+    border: 8px solid red;
+    border-radius: 20%;
+}
+ 
+
+.services{
+    min-width: 100%;
+    min-height: auto;
+    background-color: pink;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.services .web{
+    background-color: green;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+
+.services .software{
+    background-color: powderblue;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+
+.services .product{
+    background-color: blue;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+/*  end of services page  */
+
+
+/* skillS page */
+
+.section .mySkills{
+    max-width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: purple;
+}
+
+.mySkills .html-container{
+    max-width: 40px;
+    min-height: 25vh;
+    background-color: chartreuse;
+
+}
+
+.css-container{
+    max-width: 40px;
+    min-height: 25vh;
+    background-color: yellow;
+
+}
+
+
+.javascript-container{
+    max-width: 45px;
+    min-height: 30vh;
+    background-color: orange;
+}
+/* end of skills page  */
+
+
+/* my team page */
+
+section .myTeam{
+    max-width: 100%;
+    max-height: 70vh;
+    background-color: pink;
+    align-items: center;
+    font-size: 18px;
+    font-family: monospace;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  
+}
+ 
+
+.team{
+    max-width: 100%;
+    min-height: 70vh;
+    background-color: pink;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 0px;
+}
+
+.team .peter{
+    max-width: 35%;
+    height: 40vh;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.team .bassey{
+    max-width: 37%;
+    height: 40vh;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.team .mary{
+    max-width: 37%;
+    height: 40vh;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+/* end of team page  */
+
+
+/* contact page */
+
+section .myContact{
+    max-width: 500px;
+    max-height: 70vh;
+    background-color: pink;
+    font-size: 14px;
+    font-family: monospace;
+}
+ 
+
+.form{
+    max-width: 500px;
+    max-height: auto;
+    background-color: white;
+}
+
+
+/* the footer */
+footer ul{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    height: 10vh;
+    list-style: none;
+    font-size: 16px;
+}
+
+footer ul a{
+    color: crimson;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fa{
+    padding: 28px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+
+}
